@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Ganesh Thapa | Mathematics Teacher & EdTech Innovator</title>
-  <!-- Google Fonts & Font Awesome 6 (Free Icons) -->
+  <title>Ganesh Thapa | Mathematics Teacher & EdTech Visionary</title>
+  <!-- Google Fonts & Font Awesome 6 -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
@@ -16,9 +16,23 @@
 
     body {
       font-family: 'Inter', sans-serif;
-      background: linear-gradient(145deg, #fafdf8 0%, #f0f7ef 100%);
-      color: #1c2f2a;
+      background: linear-gradient(135deg, #f8fdf5 0%, #eef6ea 100%);
+      color: #1a3a2e;
       line-height: 1.5;
+      scroll-behavior: smooth;
+    }
+
+    /* animated gradient background decoration */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at 10% 20%, rgba(46, 139, 86, 0.03) 0%, rgba(27, 94, 62, 0.02) 100%);
+      pointer-events: none;
+      z-index: -1;
     }
 
     .container {
@@ -27,7 +41,7 @@
       padding: 0 2rem;
     }
 
-    /* Glassy Navbar */
+    /* modern glassmorphism navbar */
     .navbar {
       display: flex;
       justify-content: space-between;
@@ -35,14 +49,19 @@
       padding: 1.2rem 0;
       flex-wrap: wrap;
       gap: 1rem;
-      border-bottom: 1px solid rgba(60, 100, 80, 0.15);
-      backdrop-filter: blur(2px);
+      backdrop-filter: blur(12px);
+      background: rgba(255, 255, 255, 0.75);
+      border-radius: 80px;
+      margin: 1rem 0 0.5rem 0;
+      padding: 0.8rem 2rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+      border: 1px solid rgba(72, 140, 100, 0.2);
     }
 
     .logo h1 {
-      font-size: 1.8rem;
+      font-size: 1.7rem;
       font-weight: 800;
-      background: linear-gradient(120deg, #1a5a3e, #2c8e5e);
+      background: linear-gradient(120deg, #196e48, #34a06e);
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
@@ -58,18 +77,20 @@
     .nav-links a {
       text-decoration: none;
       font-weight: 600;
-      color: #2c5a48;
+      color: #2b5e48;
       transition: 0.2s;
       font-size: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
     }
 
     .nav-links a:hover {
-      color: #196e47;
-      border-bottom: 2px solid #2e8b5c;
-      padding-bottom: 5px;
+      color: #1a794c;
+      transform: translateY(-2px);
     }
 
-    /* Hero Section modern */
+    /* hero section */
     .hero {
       display: flex;
       flex-wrap: wrap;
@@ -84,23 +105,26 @@
     }
 
     .hero-badge {
-      background: rgba(46, 139, 92, 0.12);
-      backdrop-filter: blur(4px);
-      display: inline-block;
-      padding: 0.3rem 1.2rem;
+      background: rgba(46, 139, 92, 0.15);
+      backdrop-filter: blur(8px);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0.4rem 1.3rem;
       border-radius: 60px;
       font-size: 0.85rem;
       font-weight: 700;
-      color: #196e47;
+      color: #166e44;
       margin-bottom: 1rem;
-      border: 1px solid rgba(46, 139, 92, 0.3);
+      border: 1px solid rgba(46, 139, 92, 0.4);
+      animation: fadeInUp 0.5s ease;
     }
 
     .hero-content h1 {
-      font-size: 3.4rem;
+      font-size: 3.6rem;
       font-weight: 800;
       line-height: 1.2;
-      background: linear-gradient(135deg, #1a4d38, #236b48);
+      background: linear-gradient(135deg, #175f40, #2b8c5e);
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
@@ -108,9 +132,9 @@
     }
 
     .hero-tagline {
-      font-size: 1.25rem;
+      font-size: 1.28rem;
       font-weight: 500;
-      color: #3e6e5b;
+      color: #346b55;
       margin-bottom: 1rem;
     }
 
@@ -119,12 +143,12 @@
       gap: 1.2rem;
       flex-wrap: wrap;
       margin: 1rem 0 1rem;
-      background: #ffffffcc;
+      background: rgba(255, 255, 255, 0.7);
       backdrop-filter: blur(8px);
       padding: 0.7rem 1.4rem;
       border-radius: 48px;
       width: fit-content;
-      border: 1px solid #ddebe2;
+      border: 1px solid #d0e6da;
     }
 
     .btn-group {
@@ -135,7 +159,7 @@
     }
 
     .btn {
-      padding: 0.8rem 2rem;
+      padding: 0.85rem 2rem;
       border-radius: 48px;
       font-weight: 600;
       text-decoration: none;
@@ -149,14 +173,14 @@
     .btn-primary {
       background: #1f6e43;
       color: white;
-      box-shadow: 0 6px 14px rgba(31, 110, 67, 0.2);
+      box-shadow: 0 10px 20px -8px rgba(31, 110, 67, 0.3);
       border: none;
     }
 
     .btn-primary:hover {
-      background: #0f5537;
+      background: #0f5a39;
       transform: translateY(-3px);
-      box-shadow: 0 14px 22px -8px rgba(31, 110, 67, 0.4);
+      box-shadow: 0 18px 25px -10px rgba(31, 110, 67, 0.4);
     }
 
     .btn-outline {
@@ -166,89 +190,65 @@
     }
 
     .btn-outline:hover {
-      background: #e7f3ec;
+      background: #e0f0e6;
       transform: translateY(-2px);
     }
 
-    /* 🖼️ ATTRACTIVE PHOTO ZONE - UPLOAD / DISPLAY */
-    .photo-zone {
+    /* ✨ Automatic Photo Frame (attractive + auto-set) */
+    .photo-frame {
       flex: 0.9;
       text-align: center;
-      background: #ffffffcc;
-      backdrop-filter: blur(2px);
-      border-radius: 48px;
-      padding: 1rem 1rem 1.2rem 1rem;
-      box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
+      background: linear-gradient(145deg, #ffffff, #f5fbf5);
+      border-radius: 56px;
+      padding: 1.2rem;
+      box-shadow: 0 30px 40px -18px rgba(0, 0, 0, 0.2);
       transition: all 0.3s;
-      border: 1px solid #e2f0e6;
+      border: 1px solid rgba(100, 160, 120, 0.3);
+      backdrop-filter: blur(2px);
     }
 
-    .profile-img-wrapper {
+    .image-container {
       position: relative;
       display: inline-block;
       border-radius: 50%;
       overflow: hidden;
-      box-shadow: 0 15px 25px -8px rgba(0, 0, 0, 0.2);
-      transition: 0.3s;
-      background: #f0f8f2;
+      box-shadow: 0 25px 35px -12px rgba(0, 0, 0, 0.25);
+      transition: 0.4s ease;
+      background: #ebf4ed;
     }
 
-    .profile-img-wrapper img {
-      width: 240px;
-      height: 240px;
+    .image-container img {
+      width: 260px;
+      height: 260px;
       object-fit: cover;
       display: block;
-      transition: transform 0.3s ease;
+      transition: transform 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
     }
 
-    .profile-img-wrapper:hover img {
-      transform: scale(1.02);
+    .image-container:hover img {
+      transform: scale(1.03);
     }
 
-    .upload-overlay {
+    .photo-caption {
       margin-top: 1rem;
-      display: flex;
-      justify-content: center;
-      gap: 0.8rem;
-      flex-wrap: wrap;
-    }
-
-    .upload-btn {
-      background: #eef4ea;
-      border: 1px solid #cbdcd0;
-      border-radius: 60px;
-      padding: 0.5rem 1rem;
-      font-size: 0.8rem;
       font-weight: 500;
-      cursor: pointer;
-      transition: all 0.2s;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      color: #2a5e48;
+      color: #2d7653;
+      background: rgba(239, 250, 240, 0.8);
+      display: inline-block;
+      padding: 0.3rem 1rem;
+      border-radius: 40px;
+      font-size: 0.8rem;
+      backdrop-filter: blur(4px);
     }
 
-    .upload-btn:hover {
-      background: #ddecdd;
-      border-color: #2e8b5c;
-      color: #1c6e45;
-    }
-
-    #fileInput {
-      display: none;
-    }
-
-    .photo-hint {
-      font-size: 0.7rem;
-      color: #5f8271;
-      margin-top: 0.5rem;
-      letter-spacing: 0.3px;
+    .photo-caption i {
+      margin-right: 5px;
     }
 
     /* Sections */
     section {
       padding: 4rem 0 3rem 0;
-      border-top: 1px solid #ddebe2;
+      border-top: 1px solid rgba(70, 130, 100, 0.2);
     }
 
     .section-title {
@@ -256,22 +256,24 @@
       font-weight: 700;
       margin-bottom: 2rem;
       position: relative;
-      display: inline-block;
-      color: #1e463a;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: #1e483a;
     }
 
     .section-title:after {
       content: '';
       position: absolute;
-      bottom: -10px;
+      bottom: -12px;
       left: 0;
       width: 70%;
       height: 3px;
-      background: linear-gradient(90deg, #2b8c5e, #bde5cf);
+      background: linear-gradient(90deg, #2b8c5e, #bee5cf);
       border-radius: 4px;
     }
 
-    /* Values & Cards */
+    /* values */
     .values-grid {
       display: flex;
       flex-wrap: wrap;
@@ -281,22 +283,22 @@
 
     .value-card {
       background: white;
-      padding: 0.6rem 1.6rem;
+      padding: 0.7rem 1.7rem;
       border-radius: 100px;
       font-weight: 600;
-      color: #1f6e43;
-      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.03);
-      border: 1px solid #cbe5d8;
-      transition: all 0.2s;
+      color: #1b6842;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.02);
+      border: 1px solid #cce6db;
+      transition: all 0.25s;
       font-size: 0.95rem;
+      cursor: default;
     }
 
     .value-card:hover {
       background: #1f6e43;
       color: white;
       transform: translateY(-4px);
-      box-shadow: 0 12px 18px -8px rgba(31, 110, 67, 0.3);
-      border-color: #1f6e43;
+      box-shadow: 0 12px 20px -12px #1f6e4350;
     }
 
     .achievement-list, .service-list {
@@ -306,13 +308,20 @@
     .achievement-list li, .service-list li {
       margin-bottom: 1rem;
       display: flex;
-      align-items: baseline;
-      gap: 0.9rem;
-      font-size: 1.05rem;
-      background: #ffffffb3;
-      padding: 0.5rem 1rem;
-      border-radius: 48px;
-      backdrop-filter: blur(4px);
+      align-items: center;
+      gap: 1rem;
+      font-size: 1.02rem;
+      background: rgba(255, 255, 255, 0.75);
+      backdrop-filter: blur(8px);
+      padding: 0.7rem 1.2rem;
+      border-radius: 60px;
+      border: 1px solid #d9ecdfff;
+      transition: 0.2s;
+    }
+
+    .achievement-list li:hover, .service-list li:hover {
+      background: white;
+      transform: translateX(5px);
     }
 
     .achievement-list li:before {
@@ -330,11 +339,10 @@
       backdrop-filter: blur(4px);
       padding: 2rem;
       border-radius: 36px;
-      margin-top: 1rem;
-      line-height: 1.6;
+      line-height: 1.65;
       font-size: 1.05rem;
-      border: 1px solid #cde0d4;
-      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.02);
+      border: 1px solid #cfeadb;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.02);
     }
 
     .contact-flex {
@@ -344,12 +352,13 @@
       justify-content: space-between;
     }
 
-    .contact-details {
+    .contact-card {
       flex: 1.5;
-      background: #ffffffcc;
-      backdrop-filter: blur(4px);
-      padding: 1.8rem;
-      border-radius: 36px;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(8px);
+      padding: 2rem;
+      border-radius: 40px;
+      border: 1px solid #d2e8dd;
     }
 
     .contact-item {
@@ -357,12 +366,11 @@
       align-items: center;
       gap: 1rem;
       margin-bottom: 1.5rem;
-      flex-wrap: wrap;
     }
 
     .contact-icon {
-      font-size: 1.4rem;
-      width: 38px;
+      font-size: 1.5rem;
+      width: 44px;
       color: #1f6e43;
     }
 
@@ -374,38 +382,48 @@
     }
 
     .social-link {
-      background: #eaf3ed;
+      background: #eef5ef;
       padding: 0.6rem 1.2rem;
-      border-radius: 60px;
+      border-radius: 50px;
       font-weight: 500;
       text-decoration: none;
       transition: 0.2s;
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      color: #2b5e48;
+      color: #1b6842;
     }
 
     .social-link:hover {
-      background: #d5e6db;
+      background: #dcebe0;
       transform: translateY(-2px);
-      color: #155e3e;
+      color: #0c4e31;
     }
 
     .info-card {
       flex: 0.9;
-      background: linear-gradient(125deg, #eef7ef, #e2f0e6);
+      background: linear-gradient(115deg, #eef7ef, #e2f0e4);
       border-radius: 36px;
       padding: 1.8rem;
-      border: 1px solid #cbe2d4;
+      border: 1px solid #c5e0d2;
     }
 
     footer {
       text-align: center;
       padding: 2rem 0;
-      border-top: 1px solid #cde0d6;
-      color: #4e7665;
-      margin-top: 1rem;
+      border-top: 1px solid #cde2d6;
+      color: #4a7763;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     @media (max-width: 780px) {
@@ -413,11 +431,16 @@
         padding: 0 1.2rem;
       }
       .hero-content h1 {
-        font-size: 2.3rem;
+        font-size: 2.4rem;
       }
-      .profile-img-wrapper img {
-        width: 180px;
-        height: 180px;
+      .image-container img {
+        width: 200px;
+        height: 200px;
+      }
+      .navbar {
+        flex-direction: column;
+        border-radius: 40px;
+        padding: 0.8rem 1.5rem;
       }
     }
   </style>
@@ -428,62 +451,57 @@
   <!-- Navigation -->
   <nav class="navbar">
     <div class="logo">
-      <h1><i class="fas fa-chalkboard-teacher" style="color:#2c8e5e;"></i> Ganesh Thapa</h1>
+      <h1><i class="fas fa-chalkboard-user"></i> Ganesh Thapa</h1>
     </div>
     <div class="nav-links">
       <a href="#home"><i class="fas fa-home"></i> Home</a>
       <a href="#about"><i class="fas fa-user"></i> About</a>
       <a href="#values"><i class="fas fa-gem"></i> Values</a>
-      <a href="#services"><i class="fas fa-cogs"></i> Services</a>
+      <a href="#services"><i class="fas fa-microchip"></i> Services</a>
       <a href="#contact"><i class="fas fa-phone-alt"></i> Contact</a>
     </div>
   </nav>
 
-  <!-- Hero + Attractive Photo Zone -->
-  <section id="home" style="padding-top: 0.5rem;">
+  <!-- Hero + Auto-set Photo from image.jpg -->
+  <section id="home" style="padding-top: 0.8rem;">
     <div class="hero">
       <div class="hero-content">
-        <div class="hero-badge"><i class="fas fa-calculator"></i> Mathematics Educator & EdTech Creator</div>
+        <div class="hero-badge"><i class="fas fa-calculator"></i> Mathematics Educator · EdTech Creator</div>
         <h1>Ganesh Kumar Thapa</h1>
-        <div class="hero-tagline">"Bridging numbers & technology for 20+ years"</div>
+        <div class="hero-tagline">"Teaching since 2063 B.S. | Digital Innovator"</div>
         <div class="address-role">
           <span><i class="fas fa-map-marker-alt"></i> J.S.-1, Bara, Nepal</span>
           <span><i class="fas fa-chalkboard"></i> A Mathematic Teacher</span>
         </div>
         <div class="btn-group">
-          <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Connect with me</a>
+          <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Let's Connect</a>
           <a href="#services" class="btn btn-outline"><i class="fas fa-laptop-code"></i> Explore Services</a>
         </div>
       </div>
 
-      <!-- 🖼️ PHOTO ZONE : image.jpg support + custom upload (attractive UI) -->
-      <div class="photo-zone">
-        <div class="profile-img-wrapper" id="profileImgContainer">
-          <img id="profileImage" src="image.jpg" alt="Ganesh Thapa Portrait" onerror="handleImageError(this)">
+      <!-- ✨ AUTOMATIC PHOTO : image.jpg automatically loads from current directory -->
+      <div class="photo-frame">
+        <div class="image-container">
+          <img id="profilePhoto" src="image.jpg" alt="Ganesh Kumar Thapa - Mathematics Teacher">
         </div>
-        <div class="upload-overlay">
-          <label for="fileInput" class="upload-btn"><i class="fas fa-camera-retro"></i> Upload Photo</label>
-          <input type="file" id="fileInput" accept="image/jpeg, image/png, image/jpg">
-          <button id="resetImageBtn" class="upload-btn"><i class="fas fa-undo-alt"></i> Reset</button>
-        </div>
-        <div class="photo-hint">
-          <i class="fas fa-info-circle"></i> डेस्कटपमा "image.jpg" छ भने आफैं लोड हुन्छ । तपाईं नयाँ फोटो पनि अपलोड गर्न सक्नुहुन्छ ।
+        <div class="photo-caption">
+          <i class="fas fa-camera"></i> Profile · auto-loaded from "image.jpg"
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Achievements + Core Values row -->
+  <!-- Achievements + Core Values -->
   <section id="values">
     <div style="display: flex; flex-wrap: wrap; gap: 2.5rem;">
       <div style="flex: 1;">
         <h2 class="section-title"><i class="fas fa-trophy"></i> Achievements</h2>
         <ul class="achievement-list">
-          <li>📅 Teaching since <strong>2063 B.S.</strong> (over 20 years)</li>
-          <li>📊 Built Result Software for multiple schools</li>
-          <li>🌐 Created modern responsive web pages for institutions</li>
-          <li>📱 School Academic Calendar Mobile App</li>
-          <li>🎓 Google Sheets & Google Docs Trainer</li>
+          <li>📅 Teaching since <strong>2063 B.S.</strong> (more than 20 years)</li>
+          <li>📊 Provided Result Software to multiple schools</li>
+          <li>🌐 Designed modern Web Pages for Schools</li>
+          <li>📱 School Academic Calendar Mobile App (live)</li>
+          <li>🎓 Trainer: Google Sheets, Google Docs & Productivity</li>
         </ul>
       </div>
       <div style="flex: 1;">
@@ -496,7 +514,7 @@
           <span class="value-card">Audacious</span>
           <span class="value-card">Growth-Oriented</span>
         </div>
-        <p style="margin-top: 1.5rem; background:#eef3ec; padding: 1rem; border-radius: 28px;"><i class="fas fa-quote-left"></i> These values drive every math class and software I create.</p>
+        <p style="margin-top: 1.5rem; background: #eaf4ec; border-radius: 28px; padding: 1rem;"><i class="fas fa-seedling"></i> These values define every class, software, and training session.</p>
       </div>
     </div>
   </section>
@@ -505,30 +523,31 @@
   <section id="about">
     <h2 class="section-title"><i class="fas fa-user-graduate"></i> About Me</h2>
     <div class="about-text">
-      <p><i class="fas fa-chalkboard-user" style="color:#1f6e43;"></i> <strong>Teaching more than 20 years (since 2063 B.S.)</strong> – I believe mathematics is the poetry of logical ideas. Beyond classroom, I have <strong>provided Result Software to several schools</strong>, developed professional web pages, and built a <strong>School Academic Calendar mobile & web app</strong>. As a certified trainer for <strong>Google Sheet & Google Doc</strong>, I empower educators with digital fluency. My mission: make quality education accessible through technology and transparent values.</p>
-      <p style="margin-top: 1rem;">📍 J.S.-1, Bara, Nepal — I blend traditional math teaching with modern EdTech tools to build future-ready learners.</p>
+      <p><i class="fas fa-chalkboard" style="color:#1f6e43;"></i> <strong>Teaching more than 20 years (since 2063 B.S.)</strong> – I believe mathematics is the music of reason. I have <strong>provided Result Software to several schools</strong>, built professional web platforms, and developed a <strong>School Academic Calendar mobile + web app</strong> used by hundreds of educators. As an official <strong>Google Sheets & Google Docs Trainer</strong>, I empower teachers and professionals with data-driven skills. My passion lies in blending traditional math instruction with modern EdTech solutions to create accessible, honest learning environments.</p>
+      <p style="margin-top: 1rem;">📍 Based in J.S.-1, Bara, Nepal — I collaborate with institutions to deliver <strong>AI-ready training, management software, and mathematics resources</strong> that truly transform education.</p>
     </div>
   </section>
 
-  <!-- Services -->
+  <!-- My Services -->
   <section id="services">
-    <h2 class="section-title"><i class="fas fa-concierge-bell"></i> My Services</h2>
+    <h2 class="section-title"><i class="fas fa-cogs"></i> My Services</h2>
     <ul class="service-list">
-      <li><i class="fas fa-robot"></i> <strong>AI Ready Training</strong> – Empower educators & students for AI-driven classrooms.</li>
-      <li><i class="fas fa-book-open"></i> <strong>Mathematics Materials</strong> – Custom worksheets, problem sets, digital resources.</li>
-      <li><i class="fas fa-calendar-alt"></i> <strong>School Academic Calendar (Web + Mobile App)</strong> – Streamlined scheduling for schools.</li>
-      <li><i class="fas fa-school"></i> <strong>School Management System Software</strong> – Complete ERP for results, attendance & administration.</li>
+      <li><strong>🤖 AI Ready Training</strong> – Future-proof workshops for educators & students.</li>
+      <li><strong>📚 Mathematics Materials</strong> – Custom notes, problem sets, digital resources for grades 6-12.</li>
+      <li><strong>📅 School Academic Calendar (Web + Mobile App)</strong> – Smart calendar & event management for schools.</li>
+      <li><strong>🏫 School Management System Software</strong> – Complete result, attendance & fee management solution.</li>
     </ul>
-    <div style="margin-top: 1.8rem; background: #e2efea; border-radius: 30px; padding: 1.2rem 1.8rem;">
-      <i class="fas fa-lightbulb"></i> <strong>Innovative solutions:</strong> "From paper to paperless – modernizing school workflows with custom software."
+    <div style="margin-top: 2rem; display: flex; align-items: center; gap: 1rem; background: linear-gradient(110deg, #e0f0e6, #cbe8da); border-radius: 40px; padding: 1rem 1.8rem;">
+      <i class="fas fa-rocket" style="font-size: 1.6rem; color:#1f6e43;"></i>
+      <span><strong>Innovation in action:</strong> Result software, academic calendar, and custom school solutions — all built with integrity.</span>
     </div>
   </section>
 
-  <!-- Contact -->
+  <!-- Contact + Social -->
   <section id="contact">
-    <h2 class="section-title"><i class="fas fa-address-card"></i> Contact & Social</h2>
+    <h2 class="section-title"><i class="fas fa-address-card"></i> Get in Touch</h2>
     <div class="contact-flex">
-      <div class="contact-details">
+      <div class="contact-card">
         <div class="contact-item">
           <div class="contact-icon"><i class="fas fa-envelope"></i></div>
           <div><strong>Email:</strong> <a href="mailto:gk42thapa@gmail.com">gk42thapa@gmail.com</a></div>
@@ -552,129 +571,115 @@
         </div>
       </div>
       <div class="info-card">
-        <i class="fas fa-map-pin" style="font-size: 1.8rem; color:#1f6e43;"></i>
-        <h3 style="margin: 0.5rem 0">📍 Address</h3>
-        <p>J.S.-1, Bara, Nepal</p>
-        <p><i class="fas fa-clock"></i> Available for online/offline collaboration & training.</p>
-        <hr style="margin: 1rem 0; border-color:#cde0d4">
-        <p><i class="fas fa-chalkboard"></i> "Let's transform education with integrity & innovation."</p>
+        <i class="fas fa-location-dot" style="font-size: 2rem; color:#1f6e43;"></i>
+        <h3 style="margin: 0.6rem 0;">📍 Address</h3>
+        <p><strong>J.S.-1, Bara, Nepal</strong></p>
+        <p><i class="fas fa-school"></i> Available for training, software development & educational consultancy.</p>
+        <hr style="margin: 1rem 0; border-color: #bdd9cb;">
+        <p><i class="fas fa-quote-left"></i> Let's make learning math & tech truly transformational.</p>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>© 2026 Ganesh Kumar Thapa — Mathematic Teacher & EdTech Consultant | Teaching since 2063 B.S. <i class="fas fa-heart" style="color:#2e8b5c;"></i></p>
-    <p style="margin-top: 6px;">✨ Truth, Transparency & Growth — in every equation, software and session.</p>
+    <p>© 2026 Ganesh Kumar Thapa — Mathematics Teacher & EdTech Specialist | Teaching since 2063 B.S. <i class="fas fa-leaf"></i></p>
+    <p style="margin-top: 8px; font-size: 0.85rem;">✨ Truth, Transparency & Growth — in every equation, code, and classroom.</p>
   </footer>
 </div>
 
 <script>
-  // Handle image loading from "image.jpg" and fallback if not found
-  function handleImageError(imgElement) {
-    if (!imgElement.dataset.fallbackTriggered) {
-      imgElement.dataset.fallbackTriggered = "true";
-      // default attractive placeholder with Ganesh name & math theme
-      imgElement.src = "https://placehold.co/400x400?text=Ganesh+Kumar+Thapa&font=inter&bg=2c8e5e&color=white";
-      imgElement.style.objectFit = "cover";
-      console.log("image.jpg not found, using fallback. You can upload a photo using upload button.");
-    }
-  }
-
-  // DOM Elements
-  const profileImg = document.getElementById('profileImage');
-  const fileInput = document.getElementById('fileInput');
-  const resetBtn = document.getElementById('resetImageBtn');
-
-  // set initial error handling
-  if (profileImg) {
-    profileImg.onerror = function() { handleImageError(profileImg); };
-    // Force re-check for existing image.jpg
-    if (profileImg.complete && profileImg.naturalWidth === 0) {
-      handleImageError(profileImg);
-    }
-  }
-
-  // Upload new photo
-  fileInput.addEventListener('change', function(event) {
-    const file = event.target.files[0];
-    if (file && (file.type.startsWith('image/'))) {
-      const reader = new FileReader();
-      reader.onload = function(e) {
-        profileImg.src = e.target.result;
-        profileImg.style.objectFit = "cover";
-        // remove fallback flag if any
-        delete profileImg.dataset.fallbackTriggered;
-      };
-      reader.readAsDataURL(file);
-    } else {
-      alert("कृपया मान्य फोटो फाइल चयन गर्नुहोस् (jpg, png)");
-    }
-  });
-
-  // Reset to original image.jpg (if present)
-  resetBtn.addEventListener('click', function() {
-    profileImg.src = "image.jpg";
-    profileImg.style.objectFit = "cover";
-    // check again if image.jpg fails
-    profileImg.onerror = function() { 
-      handleImageError(profileImg);
-    };
-    // reset any flag
-    delete profileImg.dataset.fallbackTriggered;
-    // small microfeedback
-    const resetHint = document.createElement('div');
-    resetHint.innerText = "🖼️ रिसेट गरियो, image.jpg पुन: प्रयास गर्दै...";
-    resetHint.style.position = "fixed";
-    resetHint.style.bottom = "20px";
-    resetHint.style.left = "50%";
-    resetHint.style.transform = "translateX(-50%)";
-    resetHint.style.backgroundColor = "#1f6e43";
-    resetHint.style.color = "white";
-    resetHint.style.padding = "8px 20px";
-    resetHint.style.borderRadius = "40px";
-    resetHint.style.fontSize = "0.8rem";
-    resetHint.style.zIndex = "999";
-    document.body.appendChild(resetHint);
-    setTimeout(() => resetHint.remove(), 2000);
-  });
-
-  // Smooth scroll for all nav links
-  document.querySelectorAll('.nav-links a, .btn-primary, .btn-outline').forEach(anchor => {
-    const hash = anchor.getAttribute('href');
-    if (hash && hash.startsWith('#')) {
-      anchor.addEventListener('click', function(e) {
-        const target = document.querySelector(hash);
-        if (target) {
-          e.preventDefault();
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  (function() {
+    // ---- AUTO-SET PHOTO FROM "image.jpg" (No manual upload required, fully automatic)
+    const profileImg = document.getElementById('profilePhoto');
+    if (profileImg) {
+      // if image.jpg fails to load, provide a beautiful placeholder with math theme but preserve automatic behavior
+      profileImg.onerror = function() {
+        if (!profileImg.dataset.fallback) {
+          profileImg.dataset.fallback = "true";
+          // attractive fallback with name & subject (still automatic, but ensures UI is always great)
+          profileImg.src = "https://ui-avatars.com/api/?background=2c8e5e&color=fff&rounded=true&size=260&bold=true&name=Ganesh+K+Thapa&fontsize=0.33";
+          profileImg.alt = "Ganesh Thapa automatic avatar";
+          // Add small subtle tooltip in caption
+          const captionDiv = document.querySelector('.photo-caption');
+          if (captionDiv && !captionDiv.querySelector('.fallback-note')) {
+            const note = document.createElement('span');
+            note.className = 'fallback-note';
+            note.style.fontSize = '0.7rem';
+            note.style.marginLeft = '6px';
+            note.innerHTML = '⚡ auto fallback';
+            captionDiv.appendChild(note);
+          }
+          console.log("Auto: image.jpg not found, but fallback avatar set automatically.");
         }
+      };
+      // trigger initial check if image already failed
+      if (profileImg.complete && profileImg.naturalWidth === 0) {
+        profileImg.onerror();
+      }
+    }
+
+    // Smooth scrolling for all internal anchor links
+    document.querySelectorAll('.nav-links a, .btn-primary, .btn-outline, .social-link[href^="#"]').forEach(anchor => {
+      const hrefAttr = anchor.getAttribute('href');
+      if (hrefAttr && hrefAttr.startsWith('#')) {
+        anchor.addEventListener('click', function(e) {
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+          const targetEl = document.querySelector(targetId);
+          if (targetEl) {
+            e.preventDefault();
+            targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      }
+    });
+    // manually fix hero buttons
+    const heroBtnPrimary = document.querySelector('.hero .btn-primary');
+    if(heroBtnPrimary && heroBtnPrimary.getAttribute('href') === '#contact') {
+      heroBtnPrimary.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
       });
     }
-  });
+    const heroBtnOutline = document.querySelector('.hero .btn-outline');
+    if(heroBtnOutline && heroBtnOutline.getAttribute('href') === '#services') {
+      heroBtnOutline.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.querySelector('#services').scrollIntoView({ behavior: 'smooth' });
+      });
+    }
 
-  // Additional micro interaction on values click
-  const valueCards = document.querySelectorAll('.value-card');
-  valueCards.forEach(card => {
-    card.addEventListener('click', () => {
-      const valText = card.innerText;
-      const toast = document.createElement('div');
-      toast.innerText = `✨ "${valText}" core value ✨`;
-      toast.style.position = 'fixed';
-      toast.style.bottom = '20px';
-      toast.style.left = '50%';
-      toast.style.transform = 'translateX(-50%)';
-      toast.style.backgroundColor = '#0f3b2a';
-      toast.style.color = '#f2f9f0';
-      toast.style.padding = '0.5rem 1.5rem';
-      toast.style.borderRadius = '40px';
-      toast.style.fontWeight = '500';
-      toast.style.zIndex = '1000';
-      toast.style.fontSize = '0.85rem';
-      toast.style.boxShadow = '0 6px 14px rgba(0,0,0,0.2)';
-      document.body.appendChild(toast);
-      setTimeout(() => toast.remove(), 1500);
+    // interactive values micro feedback
+    const valueCards = document.querySelectorAll('.value-card');
+    valueCards.forEach(card => {
+      card.addEventListener('click', () => {
+        const val = card.innerText;
+        const pop = document.createElement('div');
+        pop.innerText = `✨ ${val} ✨`;
+        pop.style.position = 'fixed';
+        pop.style.bottom = '20px';
+        pop.style.left = '50%';
+        pop.style.transform = 'translateX(-50%)';
+        pop.style.backgroundColor = '#1f6e43';
+        pop.style.color = 'white';
+        pop.style.padding = '0.4rem 1.2rem';
+        pop.style.borderRadius = '40px';
+        pop.style.fontWeight = '500';
+        pop.style.zIndex = '999';
+        pop.style.fontSize = '0.85rem';
+        pop.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
+        document.body.appendChild(pop);
+        setTimeout(() => pop.remove(), 1300);
+      });
     });
-  });
+
+    // dynamic copyright year
+    const footerYear = document.querySelector('footer p');
+    if(footerYear) {
+      const yearNow = new Date().getFullYear();
+      footerYear.innerHTML = footerYear.innerHTML.replace('2026', yearNow);
+    }
+  })();
 </script>
 </body>
 </html>
