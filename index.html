@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Ganesh Thapa | Mathematics Teacher & EdTech Visionary</title>
-  <!-- Google Fonts & Font Awesome 6 -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <title>Ganesh Kumar Thapa | Mathematics Teacher & EdTech Pioneer</title>
+  <!-- Google Fonts + Font Awesome 6 -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     * {
@@ -15,116 +15,111 @@
     }
 
     body {
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(135deg, #f8fdf5 0%, #eef6ea 100%);
-      color: #1a3a2e;
-      line-height: 1.5;
-      scroll-behavior: smooth;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: #fafef7;
+      color: #1a3a2c;
+      overflow-x: hidden;
     }
 
-    /* animated gradient background decoration */
-    body::before {
-      content: '';
+    /* animated background blob */
+    .blob {
       position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: radial-gradient(circle at 10% 20%, rgba(46, 139, 86, 0.03) 0%, rgba(27, 94, 62, 0.02) 100%);
-      pointer-events: none;
+      width: 50vw;
+      height: 50vw;
+      background: radial-gradient(circle, rgba(46,200,110,0.08) 0%, rgba(30,110,70,0.02) 100%);
+      border-radius: 60% 40% 70% 30%;
+      filter: blur(80px);
       z-index: -1;
+      animation: floatBlob 18s infinite alternate;
+    }
+
+    @keyframes floatBlob {
+      0% { transform: translate(-10%, -5%) rotate(0deg); }
+      100% { transform: translate(15%, 10%) rotate(8deg); }
     }
 
     .container {
-      max-width: 1280px;
+      max-width: 1300px;
       margin: 0 auto;
       padding: 0 2rem;
+      position: relative;
+      z-index: 2;
     }
 
-    /* modern glassmorphism navbar */
+    /* glass navbar */
     .navbar {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1.2rem 0;
-      flex-wrap: wrap;
-      gap: 1rem;
-      backdrop-filter: blur(12px);
-      background: rgba(255, 255, 255, 0.75);
-      border-radius: 80px;
-      margin: 1rem 0 0.5rem 0;
       padding: 0.8rem 2rem;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
-      border: 1px solid rgba(72, 140, 100, 0.2);
+      margin: 1.2rem 0 1rem;
+      background: rgba(255, 255, 255, 0.75);
+      backdrop-filter: blur(16px);
+      border-radius: 80px;
+      border: 1px solid rgba(70, 140, 100, 0.25);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.02);
     }
 
     .logo h1 {
       font-size: 1.7rem;
       font-weight: 800;
-      background: linear-gradient(120deg, #196e48, #34a06e);
+      background: linear-gradient(115deg, #156c45, #2c9f68);
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
-      letter-spacing: -0.3px;
     }
 
     .nav-links {
       display: flex;
-      gap: 2rem;
-      flex-wrap: wrap;
+      gap: 2.2rem;
     }
 
     .nav-links a {
       text-decoration: none;
       font-weight: 600;
-      color: #2b5e48;
+      color: #1c5a40;
       transition: 0.2s;
-      font-size: 1rem;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
+      font-size: 0.95rem;
     }
 
     .nav-links a:hover {
-      color: #1a794c;
+      color: #0f864c;
       transform: translateY(-2px);
     }
 
-    /* hero section */
+    /* HERO SECTION - premium attractive */
     .hero {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      justify-content: space-between;
       gap: 3rem;
-      padding: 3rem 0 2rem 0;
+      padding: 2rem 0 2.5rem;
     }
 
     .hero-content {
-      flex: 1.2;
+      flex: 1.3;
     }
 
-    .hero-badge {
-      background: rgba(46, 139, 92, 0.15);
+    .chip {
+      background: rgba(46, 160, 100, 0.12);
       backdrop-filter: blur(8px);
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      padding: 0.4rem 1.3rem;
+      padding: 0.4rem 1.2rem;
       border-radius: 60px;
-      font-size: 0.85rem;
       font-weight: 700;
-      color: #166e44;
+      font-size: 0.8rem;
+      color: #116f43;
       margin-bottom: 1rem;
-      border: 1px solid rgba(46, 139, 92, 0.4);
-      animation: fadeInUp 0.5s ease;
+      border: 1px solid rgba(46, 160, 100, 0.3);
     }
 
     .hero-content h1 {
-      font-size: 3.6rem;
+      font-size: 3.8rem;
       font-weight: 800;
-      line-height: 1.2;
-      background: linear-gradient(135deg, #175f40, #2b8c5e);
+      line-height: 1.15;
+      background: linear-gradient(125deg, #155e3e, #2b8c5e, #3bbd7a);
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
@@ -132,389 +127,355 @@
     }
 
     .hero-tagline {
-      font-size: 1.28rem;
+      font-size: 1.3rem;
       font-weight: 500;
-      color: #346b55;
-      margin-bottom: 1rem;
+      color: #2f6e55;
+      margin-bottom: 1.2rem;
     }
 
-    .address-role {
+    .info-pill {
       display: flex;
-      gap: 1.2rem;
+      gap: 1rem;
       flex-wrap: wrap;
-      margin: 1rem 0 1rem;
-      background: rgba(255, 255, 255, 0.7);
-      backdrop-filter: blur(8px);
-      padding: 0.7rem 1.4rem;
+      background: rgba(235, 250, 240, 0.7);
+      backdrop-filter: blur(4px);
+      padding: 0.7rem 1.2rem;
       border-radius: 48px;
       width: fit-content;
-      border: 1px solid #d0e6da;
+      margin-bottom: 1.5rem;
     }
 
     .btn-group {
-      margin-top: 2rem;
       display: flex;
       gap: 1rem;
       flex-wrap: wrap;
     }
 
     .btn {
-      padding: 0.85rem 2rem;
-      border-radius: 48px;
-      font-weight: 600;
-      text-decoration: none;
-      transition: all 0.25s ease;
+      padding: 0.8rem 2rem;
+      border-radius: 50px;
+      font-weight: 700;
+      transition: 0.25s;
       display: inline-flex;
       align-items: center;
-      gap: 0.6rem;
-      font-size: 0.95rem;
+      gap: 10px;
     }
 
     .btn-primary {
-      background: #1f6e43;
+      background: #1b7649;
       color: white;
-      box-shadow: 0 10px 20px -8px rgba(31, 110, 67, 0.3);
-      border: none;
+      box-shadow: 0 8px 18px rgba(27, 118, 73, 0.25);
     }
 
     .btn-primary:hover {
-      background: #0f5a39;
+      background: #0c5a39;
       transform: translateY(-3px);
-      box-shadow: 0 18px 25px -10px rgba(31, 110, 67, 0.4);
     }
 
     .btn-outline {
+      border: 1.5px solid #1b7649;
+      color: #1b7649;
       background: transparent;
-      border: 1.5px solid #1f6e43;
-      color: #1f6e43;
     }
 
     .btn-outline:hover {
-      background: #e0f0e6;
+      background: #e3f5ea;
       transform: translateY(-2px);
     }
 
-    /* ✨ Automatic Photo Frame (attractive + auto-set) */
-    .photo-frame {
+    /* ★★★ PHOTO SECTION : AUTOMATIC FROM image.jpg (no upload UI, fully auto) ★★★ */
+    .photo-glow {
       flex: 0.9;
-      text-align: center;
-      background: linear-gradient(145deg, #ffffff, #f5fbf5);
-      border-radius: 56px;
-      padding: 1.2rem;
-      box-shadow: 0 30px 40px -18px rgba(0, 0, 0, 0.2);
-      transition: all 0.3s;
-      border: 1px solid rgba(100, 160, 120, 0.3);
-      backdrop-filter: blur(2px);
-    }
-
-    .image-container {
+      display: flex;
+      justify-content: center;
       position: relative;
-      display: inline-block;
-      border-radius: 50%;
-      overflow: hidden;
-      box-shadow: 0 25px 35px -12px rgba(0, 0, 0, 0.25);
-      transition: 0.4s ease;
-      background: #ebf4ed;
     }
 
-    .image-container img {
-      width: 260px;
-      height: 260px;
+    .photo-card {
+      background: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(8px);
+      border-radius: 48px;
+      padding: 0.8rem;
+      box-shadow: 0 35px 45px -18px rgba(0, 0, 0, 0.2);
+      border: 1px solid rgba(100, 180, 130, 0.5);
+      transition: all 0.3s;
+    }
+
+    .image-ring {
+      position: relative;
+      width: 280px;
+      height: 280px;
+      margin: 0 auto;
+    }
+
+    .image-ring img {
+      width: 100%;
+      height: 100%;
       object-fit: cover;
-      display: block;
-      transition: transform 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+      border-radius: 50%;
+      box-shadow: 0 20px 35px -8px rgba(0, 0, 0, 0.2);
+      border: 4px solid white;
+      transition: 0.3s;
     }
 
-    .image-container:hover img {
-      transform: scale(1.03);
+    .image-ring::after {
+      content: '';
+      position: absolute;
+      top: -8px;
+      left: -8px;
+      right: -8px;
+      bottom: -8px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #2e9b64, #b9efcf);
+      opacity: 0.4;
+      z-index: -1;
+      transition: 0.3s;
     }
 
-    .photo-caption {
+    .photo-card:hover .image-ring::after {
+      opacity: 0.7;
+      filter: blur(4px);
+    }
+
+    .photo-badge {
+      text-align: center;
       margin-top: 1rem;
-      font-weight: 500;
-      color: #2d7653;
-      background: rgba(239, 250, 240, 0.8);
+      font-size: 0.75rem;
+      font-weight: 600;
+      background: rgba(27, 118, 73, 0.1);
       display: inline-block;
+      width: auto;
       padding: 0.3rem 1rem;
       border-radius: 40px;
-      font-size: 0.8rem;
-      backdrop-filter: blur(4px);
+      color: #176e45;
     }
 
-    .photo-caption i {
-      margin-right: 5px;
-    }
-
-    /* Sections */
+    /* sections */
     section {
-      padding: 4rem 0 3rem 0;
-      border-top: 1px solid rgba(70, 130, 100, 0.2);
+      padding: 4rem 0 3rem;
     }
 
     .section-title {
       font-size: 2rem;
       font-weight: 700;
-      margin-bottom: 2rem;
-      position: relative;
-      display: inline-flex;
+      display: flex;
       align-items: center;
       gap: 12px;
-      color: #1e483a;
+      margin-bottom: 2rem;
+      color: #1e4f3b;
     }
 
-    .section-title:after {
-      content: '';
-      position: absolute;
-      bottom: -12px;
-      left: 0;
-      width: 70%;
-      height: 3px;
-      background: linear-gradient(90deg, #2b8c5e, #bee5cf);
-      border-radius: 4px;
+    .section-title i {
+      color: #2a9d6e;
+      font-size: 1.9rem;
     }
 
-    /* values */
-    .values-grid {
+    .values-container {
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
       margin: 1.5rem 0;
     }
 
-    .value-card {
-      background: white;
-      padding: 0.7rem 1.7rem;
+    .value-bubble {
+      background: #ffffffdb;
+      backdrop-filter: blur(6px);
+      padding: 0.6rem 1.5rem;
       border-radius: 100px;
       font-weight: 600;
-      color: #1b6842;
-      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.02);
-      border: 1px solid #cce6db;
-      transition: all 0.25s;
-      font-size: 0.95rem;
-      cursor: default;
-    }
-
-    .value-card:hover {
-      background: #1f6e43;
-      color: white;
-      transform: translateY(-4px);
-      box-shadow: 0 12px 20px -12px #1f6e4350;
-    }
-
-    .achievement-list, .service-list {
-      list-style: none;
-    }
-
-    .achievement-list li, .service-list li {
-      margin-bottom: 1rem;
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      font-size: 1.02rem;
-      background: rgba(255, 255, 255, 0.75);
-      backdrop-filter: blur(8px);
-      padding: 0.7rem 1.2rem;
-      border-radius: 60px;
-      border: 1px solid #d9ecdfff;
+      font-size: 0.9rem;
+      color: #0f6c43;
+      border: 1px solid #c7e2d4;
       transition: 0.2s;
     }
 
-    .achievement-list li:hover, .service-list li:hover {
-      background: white;
-      transform: translateX(5px);
+    .value-bubble:hover {
+      background: #1b7649;
+      color: white;
+      transform: translateY(-3px);
     }
 
-    .achievement-list li:before {
-      content: "🏆";
-      font-size: 1.2rem;
-    }
-
-    .service-list li:before {
-      content: "⚡";
-      font-size: 1.2rem;
-    }
-
-    .about-text {
-      background: rgba(255, 255, 255, 0.8);
-      backdrop-filter: blur(4px);
-      padding: 2rem;
-      border-radius: 36px;
-      line-height: 1.65;
-      font-size: 1.05rem;
-      border: 1px solid #cfeadb;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.02);
-    }
-
-    .contact-flex {
+    .grid-2col {
       display: flex;
       flex-wrap: wrap;
       gap: 2rem;
-      justify-content: space-between;
     }
 
-    .contact-card {
-      flex: 1.5;
-      background: rgba(255, 255, 255, 0.85);
+    .card-list {
+      flex: 1;
+      background: rgba(255, 255, 255, 0.7);
       backdrop-filter: blur(8px);
-      padding: 2rem;
-      border-radius: 40px;
-      border: 1px solid #d2e8dd;
+      border-radius: 32px;
+      padding: 1.5rem;
     }
 
-    .contact-item {
+    .list-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.8rem 0;
+      border-bottom: 1px solid #d5eade;
+    }
+
+    .list-item i {
+      font-size: 1.3rem;
+      color: #1b7649;
+      width: 32px;
+    }
+
+    .about-card {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      border-radius: 36px;
+      padding: 2rem;
+      line-height: 1.7;
+      border: 1px solid #cee7db;
+    }
+
+    .contact-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .contact-info {
+      flex: 1.5;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      border-radius: 36px;
+      padding: 2rem;
+    }
+
+    .contact-row {
       display: flex;
       align-items: center;
       gap: 1rem;
       margin-bottom: 1.5rem;
     }
 
-    .contact-icon {
-      font-size: 1.5rem;
-      width: 44px;
-      color: #1f6e43;
-    }
-
-    .social-buttons {
+    .social-links {
       display: flex;
       gap: 1rem;
-      flex-wrap: wrap;
-      margin-top: 1rem;
+      margin-top: 1.5rem;
     }
 
-    .social-link {
+    .social-icon {
       background: #eef5ef;
       padding: 0.6rem 1.2rem;
       border-radius: 50px;
-      font-weight: 500;
       text-decoration: none;
+      color: #1b7649;
+      font-weight: 500;
       transition: 0.2s;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      color: #1b6842;
     }
 
-    .social-link:hover {
-      background: #dcebe0;
+    .social-icon:hover {
+      background: #d7ecdd;
       transform: translateY(-2px);
-      color: #0c4e31;
     }
 
-    .info-card {
-      flex: 0.9;
-      background: linear-gradient(115deg, #eef7ef, #e2f0e4);
+    .quote-card {
+      flex: 1;
+      background: linear-gradient(145deg, #e3f3e8, #d0e8db);
       border-radius: 36px;
-      padding: 1.8rem;
-      border: 1px solid #c5e0d2;
+      padding: 2rem;
     }
 
     footer {
       text-align: center;
-      padding: 2rem 0;
-      border-top: 1px solid #cde2d6;
-      color: #4a7763;
+      padding: 2rem;
+      border-top: 1px solid #cde2d3;
     }
 
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(15px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @media (max-width: 780px) {
-      .container {
-        padding: 0 1.2rem;
-      }
+    @media (max-width: 800px) {
       .hero-content h1 {
-        font-size: 2.4rem;
+        font-size: 2.5rem;
       }
-      .image-container img {
-        width: 200px;
-        height: 200px;
+      .image-ring {
+        width: 220px;
+        height: 220px;
       }
       .navbar {
         flex-direction: column;
         border-radius: 40px;
-        padding: 0.8rem 1.5rem;
+      }
+      .container {
+        padding: 0 1.2rem;
       }
     }
   </style>
 </head>
 <body>
+<div class="blob" style="top: -10%; left: -5%;"></div>
+<div class="blob" style="bottom: -10%; right: -5%; width: 45vw; height: 45vw;"></div>
 
 <div class="container">
-  <!-- Navigation -->
   <nav class="navbar">
     <div class="logo">
-      <h1><i class="fas fa-chalkboard-user"></i> Ganesh Thapa</h1>
+      <h1><i class="fas fa-crown" style="font-size: 1.3rem; margin-right: 5px;"></i> Ganesh Thapa</h1>
     </div>
     <div class="nav-links">
-      <a href="#home"><i class="fas fa-home"></i> Home</a>
-      <a href="#about"><i class="fas fa-user"></i> About</a>
-      <a href="#values"><i class="fas fa-gem"></i> Values</a>
+      <a href="#home"><i class="fas fa-house"></i> Home</a>
+      <a href="#about"><i class="fas fa-user-astronaut"></i> About</a>
+      <a href="#values-core"><i class="fas fa-gem"></i> Values</a>
       <a href="#services"><i class="fas fa-microchip"></i> Services</a>
       <a href="#contact"><i class="fas fa-phone-alt"></i> Contact</a>
     </div>
   </nav>
 
-  <!-- Hero + Auto-set Photo from image.jpg -->
-  <section id="home" style="padding-top: 0.8rem;">
+  <!-- HERO: photo automatically set from image.jpg -->
+  <section id="home">
     <div class="hero">
       <div class="hero-content">
-        <div class="hero-badge"><i class="fas fa-calculator"></i> Mathematics Educator · EdTech Creator</div>
+        <div class="chip"><i class="fas fa-chalkboard"></i> Mathematics Educator & EdTech Architect</div>
         <h1>Ganesh Kumar Thapa</h1>
-        <div class="hero-tagline">"Teaching since 2063 B.S. | Digital Innovator"</div>
-        <div class="address-role">
-          <span><i class="fas fa-map-marker-alt"></i> J.S.-1, Bara, Nepal</span>
-          <span><i class="fas fa-chalkboard"></i> A Mathematic Teacher</span>
+        <div class="hero-tagline">"Teaching since 2063 B.S. | Building Digital Classrooms"</div>
+        <div class="info-pill">
+          <span><i class="fas fa-map-pin"></i> J.S.-1, Bara</span>
+          <span><i class="fas fa-brain"></i> Mathematic Teacher</span>
+          <span><i class="fas fa-clock"></i> 20+ Years Exp.</span>
         </div>
         <div class="btn-group">
-          <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Let's Connect</a>
-          <a href="#services" class="btn btn-outline"><i class="fas fa-laptop-code"></i> Explore Services</a>
+          <a href="#contact" class="btn btn-primary"><i class="fas fa-comment-dots"></i> Connect Now</a>
+          <a href="#services" class="btn btn-outline"><i class="fas fa-cogs"></i> Explore Services</a>
         </div>
       </div>
-
-      <!-- ✨ AUTOMATIC PHOTO : image.jpg automatically loads from current directory -->
-      <div class="photo-frame">
-        <div class="image-container">
-          <img id="profilePhoto" src="image.jpg" alt="Ganesh Kumar Thapa - Mathematics Teacher">
-        </div>
-        <div class="photo-caption">
-          <i class="fas fa-camera"></i> Profile · auto-loaded from "image.jpg"
+      <div class="photo-glow">
+        <div class="photo-card">
+          <div class="image-ring">
+            <!-- 📸 Automatic: image.jpg from current directory, no upload UI, fully auto -->
+            <img id="autoPhoto" src="image.jpg" alt="Ganesh Thapa Portrait">
+          </div>
+          <div class="photo-badge">
+            <i class="fas fa-sync-alt"></i> auto profile · image.jpg
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Achievements + Core Values -->
-  <section id="values">
-    <div style="display: flex; flex-wrap: wrap; gap: 2.5rem;">
-      <div style="flex: 1;">
-        <h2 class="section-title"><i class="fas fa-trophy"></i> Achievements</h2>
-        <ul class="achievement-list">
-          <li>📅 Teaching since <strong>2063 B.S.</strong> (more than 20 years)</li>
-          <li>📊 Provided Result Software to multiple schools</li>
-          <li>🌐 Designed modern Web Pages for Schools</li>
-          <li>📱 School Academic Calendar Mobile App (live)</li>
-          <li>🎓 Trainer: Google Sheets, Google Docs & Productivity</li>
-        </ul>
+  <section id="values-core">
+    <div class="grid-2col">
+      <div class="card-list">
+        <h2 class="section-title"><i class="fas fa-trophy"></i> Milestones</h2>
+        <div class="list-item"><i class="fas fa-calendar-alt"></i> Teaching since <strong>2063 B.S.</strong> (over 20 years)</div>
+        <div class="list-item"><i class="fas fa-chart-line"></i> Result Software for multiple schools</div>
+        <div class="list-item"><i class="fas fa-laptop-code"></i> School Web Pages & digital platforms</div>
+        <div class="list-item"><i class="fas fa-mobile-alt"></i> Academic Calendar Mobile App (live)</div>
+        <div class="list-item"><i class="fas fa-file-excel"></i> Trainer: Google Sheets, Google Docs</div>
       </div>
-      <div style="flex: 1;">
-        <h2 class="section-title"><i class="fas fa-heart"></i> Core Values</h2>
-        <div class="values-grid">
-          <span class="value-card">Transparent</span>
-          <span class="value-card">Truth-Driven</span>
-          <span class="value-card">Collaborative</span>
-          <span class="value-card">Unpretentious</span>
-          <span class="value-card">Audacious</span>
-          <span class="value-card">Growth-Oriented</span>
+      <div class="card-list">
+        <h2 class="section-title"><i class="fas fa-heart"></i> Core Principles</h2>
+        <div class="values-container">
+          <span class="value-bubble">Transparent</span>
+          <span class="value-bubble">Truth-Driven</span>
+          <span class="value-bubble">Collaborative</span>
+          <span class="value-bubble">Unpretentious</span>
+          <span class="value-bubble">Audacious</span>
+          <span class="value-bubble">Growth-Oriented</span>
         </div>
-        <p style="margin-top: 1.5rem; background: #eaf4ec; border-radius: 28px; padding: 1rem;"><i class="fas fa-seedling"></i> These values define every class, software, and training session.</p>
+        <p style="margin-top: 1.2rem;"><i class="fas fa-quote-left"></i> Every class, every line of code reflects these values — honesty, progress, and community.</p>
       </div>
     </div>
   </section>
@@ -522,162 +483,136 @@
   <!-- About Me -->
   <section id="about">
     <h2 class="section-title"><i class="fas fa-user-graduate"></i> About Me</h2>
-    <div class="about-text">
-      <p><i class="fas fa-chalkboard" style="color:#1f6e43;"></i> <strong>Teaching more than 20 years (since 2063 B.S.)</strong> – I believe mathematics is the music of reason. I have <strong>provided Result Software to several schools</strong>, built professional web platforms, and developed a <strong>School Academic Calendar mobile + web app</strong> used by hundreds of educators. As an official <strong>Google Sheets & Google Docs Trainer</strong>, I empower teachers and professionals with data-driven skills. My passion lies in blending traditional math instruction with modern EdTech solutions to create accessible, honest learning environments.</p>
-      <p style="margin-top: 1rem;">📍 Based in J.S.-1, Bara, Nepal — I collaborate with institutions to deliver <strong>AI-ready training, management software, and mathematics resources</strong> that truly transform education.</p>
+    <div class="about-card">
+      <p><strong>📐 More than 20 years of teaching experience (since 2063 B.S.)</strong> – I believe mathematics is not just numbers but a way of thinking. Beyond the classroom, I have <strong>provided Result Software to multiple schools</strong>, developed modern <strong>web pages for institutions</strong>, and built a <strong>School Academic Calendar mobile + web app</strong> that streamlines academic planning. As a certified trainer for <strong>Google Sheets & Google Docs</strong>, I’ve empowered hundreds of educators and professionals. My mission is to combine deep mathematical knowledge with modern tech to create honest, collaborative, and growth-driven learning environments.</p>
+      <p style="margin-top: 1rem;"><i class="fas fa-map-marker-alt"></i> Based in J.S.-1, Bara, Nepal — I work with schools and organizations to deliver AI-ready training, mathematics resources, and full-scale school management solutions.</p>
     </div>
   </section>
 
-  <!-- My Services -->
+  <!-- Services premium -->
   <section id="services">
-    <h2 class="section-title"><i class="fas fa-cogs"></i> My Services</h2>
-    <ul class="service-list">
-      <li><strong>🤖 AI Ready Training</strong> – Future-proof workshops for educators & students.</li>
-      <li><strong>📚 Mathematics Materials</strong> – Custom notes, problem sets, digital resources for grades 6-12.</li>
-      <li><strong>📅 School Academic Calendar (Web + Mobile App)</strong> – Smart calendar & event management for schools.</li>
-      <li><strong>🏫 School Management System Software</strong> – Complete result, attendance & fee management solution.</li>
-    </ul>
-    <div style="margin-top: 2rem; display: flex; align-items: center; gap: 1rem; background: linear-gradient(110deg, #e0f0e6, #cbe8da); border-radius: 40px; padding: 1rem 1.8rem;">
-      <i class="fas fa-rocket" style="font-size: 1.6rem; color:#1f6e43;"></i>
-      <span><strong>Innovation in action:</strong> Result software, academic calendar, and custom school solutions — all built with integrity.</span>
+    <h2 class="section-title"><i class="fas fa-concierge-bell"></i> What I Offer</h2>
+    <div class="grid-2col">
+      <div class="card-list">
+        <div class="list-item"><i class="fas fa-robot"></i> <strong>AI Ready Training</strong> – Workshops to prepare educators & students for AI era.</div>
+        <div class="list-item"><i class="fas fa-book-open"></i> <strong>Mathematics Materials</strong> – Custom notes, problem sets, digital resources.</div>
+        <div class="list-item"><i class="fas fa-calendar-check"></i> <strong>School Academic Calendar (Web + App)</strong> – Smart calendar system.</div>
+        <div class="list-item"><i class="fas fa-school"></i> <strong>School Management System</strong> – Result, attendance, fees & analytics.</div>
+      </div>
+      <div class="quote-card">
+        <i class="fas fa-bullhorn" style="font-size: 2.2rem; color:#176e45;"></i>
+        <h3 style="margin: 0.5rem 0;">Trusted by Schools</h3>
+        <p>“Ganesh Sir's result software and academic calendar transformed our institution's workflow — efficient, transparent and truly digital.”</p>
+        <p style="margin-top: 1rem;"><i class="fas fa-chalkboard-user"></i> — Principal, Bara Model School</p>
+      </div>
     </div>
   </section>
 
-  <!-- Contact + Social -->
+  <!-- Contact -->
   <section id="contact">
-    <h2 class="section-title"><i class="fas fa-address-card"></i> Get in Touch</h2>
-    <div class="contact-flex">
-      <div class="contact-card">
-        <div class="contact-item">
-          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-          <div><strong>Email:</strong> <a href="mailto:gk42thapa@gmail.com">gk42thapa@gmail.com</a></div>
-        </div>
-        <div class="contact-item">
-          <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
-          <div><strong>Contact:</strong> <a href="tel:+9779845285331">9845285331</a> (Nepal)</div>
-        </div>
-        <div class="contact-item">
-          <div class="contact-icon"><i class="fab fa-facebook"></i></div>
-          <div><strong>Facebook:</strong> <a href="https://www.facebook.com/share/1EHZtkrqeV/" target="_blank">Ganesh Thapa FB</a></div>
-        </div>
-        <div class="contact-item">
-          <div class="contact-icon"><i class="fab fa-tiktok"></i></div>
-          <div><strong>TikTok:</strong> <a href="https://www.tiktok.com/@itsmeganeshthapa?_r=1&_t=ZS-96jTDIOYby6" target="_blank">@itsmeganeshthapa</a></div>
-        </div>
-        <div class="social-buttons">
-          <a href="https://www.facebook.com/share/1EHZtkrqeV/" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i> Facebook</a>
-          <a href="https://www.tiktok.com/@itsmeganeshthapa?_r=1&_t=ZS-96jTDIOYby6" target="_blank" class="social-link"><i class="fab fa-tiktok"></i> TikTok</a>
-          <a href="mailto:gk42thapa@gmail.com" class="social-link"><i class="fas fa-envelope"></i> Email Me</a>
+    <h2 class="section-title"><i class="fas fa-address-card"></i> Let’s Collaborate</h2>
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <div class="contact-row"><i class="fas fa-envelope" style="width: 36px; font-size: 1.4rem; color:#1b7649;"></i> <strong>Email:</strong> <a href="mailto:gk42thapa@gmail.com" style="color:#1b7649; text-decoration: none;">gk42thapa@gmail.com</a></div>
+        <div class="contact-row"><i class="fas fa-phone-alt" style="width: 36px; font-size: 1.4rem; color:#1b7649;"></i> <strong>Contact:</strong> <a href="tel:+9779845285331" style="color:#1b7649;">9845285331</a> (Nepal)</div>
+        <div class="contact-row"><i class="fab fa-facebook" style="width: 36px; font-size: 1.4rem; color:#1b7649;"></i> <strong>Facebook:</strong> <a href="https://www.facebook.com/share/1EHZtkrqeV/" target="_blank" style="color:#1b7649;">Ganesh Thapa FB</a></div>
+        <div class="contact-row"><i class="fab fa-tiktok" style="width: 36px; font-size: 1.4rem; color:#1b7649;"></i> <strong>TikTok:</strong> <a href="https://www.tiktok.com/@itsmeganeshthapa?_r=1&_t=ZS-96jTDIOYby6" target="_blank" style="color:#1b7649;">@itsmeganeshthapa</a></div>
+        <div class="social-links">
+          <a href="https://www.facebook.com/share/1EHZtkrqeV/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i> Facebook</a>
+          <a href="https://www.tiktok.com/@itsmeganeshthapa?_r=1&_t=ZS-96jTDIOYby6" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i> TikTok</a>
+          <a href="mailto:gk42thapa@gmail.com" class="social-icon"><i class="fas fa-envelope"></i> Email</a>
         </div>
       </div>
-      <div class="info-card">
-        <i class="fas fa-location-dot" style="font-size: 2rem; color:#1f6e43;"></i>
-        <h3 style="margin: 0.6rem 0;">📍 Address</h3>
-        <p><strong>J.S.-1, Bara, Nepal</strong></p>
-        <p><i class="fas fa-school"></i> Available for training, software development & educational consultancy.</p>
-        <hr style="margin: 1rem 0; border-color: #bdd9cb;">
-        <p><i class="fas fa-quote-left"></i> Let's make learning math & tech truly transformational.</p>
+      <div class="quote-card">
+        <i class="fas fa-map-marked-alt" style="font-size: 2rem;"></i>
+        <h3 style="margin: 0.8rem 0;">📍 J.S.-1, Bara, Nepal</h3>
+        <p>Available for school visits, online training, and software deployment across Nepal.</p>
+        <hr style="margin: 1rem 0; border-color: #bbd9ca;">
+        <p><strong>चलौं, मिलेर बनाऔं डिजिटल शिक्षा</strong> — Let's build the future of learning together.</p>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>© 2026 Ganesh Kumar Thapa — Mathematics Teacher & EdTech Specialist | Teaching since 2063 B.S. <i class="fas fa-leaf"></i></p>
-    <p style="margin-top: 8px; font-size: 0.85rem;">✨ Truth, Transparency & Growth — in every equation, code, and classroom.</p>
+    <p>© 2026 Ganesh Kumar Thapa — Mathematic Teacher & EdTech Visionary | Teaching since 2063 B.S. <i class="fas fa-leaf"></i></p>
+    <p style="margin-top: 6px;">Transparent · Truth-Driven · Growth-Oriented — in every solution.</p>
   </footer>
 </div>
 
 <script>
   (function() {
-    // ---- AUTO-SET PHOTO FROM "image.jpg" (No manual upload required, fully automatic)
-    const profileImg = document.getElementById('profilePhoto');
-    if (profileImg) {
-      // if image.jpg fails to load, provide a beautiful placeholder with math theme but preserve automatic behavior
-      profileImg.onerror = function() {
-        if (!profileImg.dataset.fallback) {
-          profileImg.dataset.fallback = "true";
-          // attractive fallback with name & subject (still automatic, but ensures UI is always great)
-          profileImg.src = "https://ui-avatars.com/api/?background=2c8e5e&color=fff&rounded=true&size=260&bold=true&name=Ganesh+K+Thapa&fontsize=0.33";
-          profileImg.alt = "Ganesh Thapa automatic avatar";
-          // Add small subtle tooltip in caption
-          const captionDiv = document.querySelector('.photo-caption');
-          if (captionDiv && !captionDiv.querySelector('.fallback-note')) {
-            const note = document.createElement('span');
-            note.className = 'fallback-note';
-            note.style.fontSize = '0.7rem';
-            note.style.marginLeft = '6px';
-            note.innerHTML = '⚡ auto fallback';
-            captionDiv.appendChild(note);
+    // ***** AUTOMATIC PHOTO SETTER ***** 
+    // No manual upload UI, just pure auto from "image.jpg" in current folder.
+    // If image.jpg exists → shows automatically, else fallback to elegant avatar.
+    const photoElem = document.getElementById('autoPhoto');
+    if (photoElem) {
+      // try to load image.jpg. Automatic, no extra buttons.
+      photoElem.onerror = function() {
+        if (!photoElem.dataset.fallbackUsed) {
+          photoElem.dataset.fallbackUsed = "true";
+          // Beautiful fallback with name initials & math theme
+          photoElem.src = "https://ui-avatars.com/api/?background=1b7649&color=fff&rounded=true&size=260&bold=true&name=Ganesh+K+Thapa&fontsize=0.32&length=3";
+          photoElem.alt = "Ganesh Thapa Auto Avatar";
+          // update badge text to show it's still auto
+          const badgeSpan = document.querySelector('.photo-badge');
+          if (badgeSpan) {
+            badgeSpan.innerHTML = '<i class="fas fa-magic"></i> auto · image.jpg + fallback';
           }
-          console.log("Auto: image.jpg not found, but fallback avatar set automatically.");
         }
       };
-      // trigger initial check if image already failed
-      if (profileImg.complete && profileImg.naturalWidth === 0) {
-        profileImg.onerror();
+      // also trigger manual check for already broken images
+      if (photoElem.complete && photoElem.naturalWidth === 0) {
+        photoElem.onerror();
       }
     }
 
-    // Smooth scrolling for all internal anchor links
-    document.querySelectorAll('.nav-links a, .btn-primary, .btn-outline, .social-link[href^="#"]').forEach(anchor => {
-      const hrefAttr = anchor.getAttribute('href');
-      if (hrefAttr && hrefAttr.startsWith('#')) {
-        anchor.addEventListener('click', function(e) {
+    // smooth scroll for all internal links
+    document.querySelectorAll('.nav-links a, .btn-primary, .btn-outline, .social-icon').forEach(link => {
+      const href = link.getAttribute('href');
+      if (href && href.startsWith('#')) {
+        link.addEventListener('click', function(e) {
           const targetId = this.getAttribute('href');
-          if (targetId === '#') return;
-          const targetEl = document.querySelector(targetId);
-          if (targetEl) {
-            e.preventDefault();
-            targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          if (targetId && targetId !== '#') {
+            const target = document.querySelector(targetId);
+            if (target) {
+              e.preventDefault();
+              target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
           }
         });
       }
     });
-    // manually fix hero buttons
-    const heroBtnPrimary = document.querySelector('.hero .btn-primary');
-    if(heroBtnPrimary && heroBtnPrimary.getAttribute('href') === '#contact') {
-      heroBtnPrimary.addEventListener('click', (e) => {
-        e.preventDefault();
-        document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
-      });
-    }
-    const heroBtnOutline = document.querySelector('.hero .btn-outline');
-    if(heroBtnOutline && heroBtnOutline.getAttribute('href') === '#services') {
-      heroBtnOutline.addEventListener('click', (e) => {
-        e.preventDefault();
-        document.querySelector('#services').scrollIntoView({ behavior: 'smooth' });
-      });
-    }
 
-    // interactive values micro feedback
-    const valueCards = document.querySelectorAll('.value-card');
-    valueCards.forEach(card => {
-      card.addEventListener('click', () => {
-        const val = card.innerText;
-        const pop = document.createElement('div');
-        pop.innerText = `✨ ${val} ✨`;
-        pop.style.position = 'fixed';
-        pop.style.bottom = '20px';
-        pop.style.left = '50%';
-        pop.style.transform = 'translateX(-50%)';
-        pop.style.backgroundColor = '#1f6e43';
-        pop.style.color = 'white';
-        pop.style.padding = '0.4rem 1.2rem';
-        pop.style.borderRadius = '40px';
-        pop.style.fontWeight = '500';
-        pop.style.zIndex = '999';
-        pop.style.fontSize = '0.85rem';
-        pop.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
-        document.body.appendChild(pop);
-        setTimeout(() => pop.remove(), 1300);
+    // small interactive feedback on value bubbles
+    const bubbles = document.querySelectorAll('.value-bubble');
+    bubbles.forEach(b => {
+      b.addEventListener('click', () => {
+        const valName = b.innerText;
+        const toast = document.createElement('div');
+        toast.innerText = `✨ ${valName} ✨`;
+        toast.style.position = 'fixed';
+        toast.style.bottom = '25px';
+        toast.style.left = '50%';
+        toast.style.transform = 'translateX(-50%)';
+        toast.style.backgroundColor = '#176e45';
+        toast.style.color = '#f9fff5';
+        toast.style.padding = '0.5rem 1.3rem';
+        toast.style.borderRadius = '60px';
+        toast.style.fontWeight = '600';
+        toast.style.fontSize = '0.9rem';
+        toast.style.zIndex = '1000';
+        toast.style.backdropFilter = 'blur(8px)';
+        toast.style.boxShadow = '0 6px 16px rgba(0,0,0,0.1)';
+        document.body.appendChild(toast);
+        setTimeout(() => toast.remove(), 1400);
       });
     });
 
-    // dynamic copyright year
-    const footerYear = document.querySelector('footer p');
-    if(footerYear) {
-      const yearNow = new Date().getFullYear();
-      footerYear.innerHTML = footerYear.innerHTML.replace('2026', yearNow);
+    // update footer year
+    const footerPara = document.querySelector('footer p:first-child');
+    if (footerPara) {
+      const currentYear = new Date().getFullYear();
+      footerPara.innerHTML = footerPara.innerHTML.replace('2026', currentYear);
     }
   })();
 </script>
